@@ -102,6 +102,7 @@ playGame();
 function resetGame(){
     humanScore = 0;
     computerScore = 0;
+    ties = 0;
     rockBtn.disabled = false;
     paperBtn.disabled = false;
     scissorsBtn.disabled = false;

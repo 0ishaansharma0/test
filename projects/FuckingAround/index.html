@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fucking around</title>
+    <script src="script.js" defer></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="hero__title">EMPOWER YOUNG MINDS</h1>
+        <p class="hero__description">Discover a wold of learning possibilities with our
+        <span id="hero__highlight">innovative</span>
+        educational platform. </p>
+    </header>
+
+    <section class="feature">
+        <div class="feature__container">
+            <div class="feature__item">
+                <h2 class="feature__title feature__title--selected">
+                    Empower Student Learning
+                </h2>
+                <p class="feature__description">
+                    Our platform enhances student engagement by providing interactive learning tools. Experience a seamless integration of technology that supports diverse learning styles.
+                </p>
+            </div>
+            <div class="feature__item">
+                <h2 class="feature__title">
+                    Streamlined Communication Tools
+                </h2>
+                <p class="feature__description">
+                    Stay connected with parents and students through our easy-to-use communication features. Foster collaboration and transparency within your educational community.
+                </p>
+            </div>
+            <div class="feature__item">
+                <h2 class="feature__title">
+                    Customizable Learning Experience
+                </h2>
+                <p class="feature__description">
+                    Tailor your curriculum to meet the unique needs of your students.Our flexible platform allows educators to create personalized learning paths.
+                </p>
+            </div>
+        </div>
+
+        <div class="feature__item">
+            <img class= "feature__image" src="images/features.jpg" alt="Feature Image">
+        </div>
+    </section>
+
+    <section class="cta"> 
+        <h3 class="cta__title">Learn More About Us by Contacting Us</h3>
+        <p class="cta__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Some random text here and
+            there. More random text. There is more to say about these random things
+            I have to know everything about this here and there.
+        </p>
+        <button class="cta__button cta__button--primary">Learn More</button>
+    </section>
+    <section class="video">
+        <h3 class="video__title">Grow Your Child's Future</h3>
+        <p class="video__description">
+            More random text. There is more to say about these random things
+            I have to know everything about this here and there.
+        </p>
+        <div class="video__controls">
+            <button class="video__button video__button--primary">
+                <i class="fas fa-book"></i> Learn More
+            </button> 
+            <button class="video__button video__button--secondary">
+                <i class="fas fa-play-circle"></i> Watch Video
+            </button>
+        </div>
+        <div class="video__container"></div>
+    </section>
+    <!--Flex - Programs Sections-->
+    <section class="programs">
+        <h2>
+            Explore Our State of the Art Facilities and Enriching Learning Experience
+        </h2>
+        <div class="programs__cards">
+            <div class="programs__card">
+                <img class="programs__card-img" src="images/program1.jpg" alt="Learning Activities">
+                <h3>Engaging Extracurricular Activities for Holistic Student Development</h3>
+                <p>Our school offers modern facilities designed to enhance
+                    learning experience.</p>
+                <button class="programs__button">Learn More</button>
+            </div>
+            <div class="programs__card">
+                <img class="programs__card-img" src="images/program2.jpg" alt="Academic Activities">
+                <h3>Diverse Academic
+                    Programs Tailored to
+                    Student Interests and
+                    Goals</h3>
+                <p>We provide a wide range of
+                    academic programs to cater
+                    to every student.</p>
+                <button class="programs__button">Learn More</button>
+            </div>
+            
+            <div class="programs__card">
+                <img class="programs__card-img" src="images/program3.jpg" alt="Staff Activities">
+                <h3>Dedicated Staff
+                    Committed to Student
+                    Success and Growth</h3>
+                <p>Our experienced educators
+                    are passionate about
+                    nurturing each student's
+                    potential.</p>
+                <button class="programs__button">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <!--Flex - Form Sections-->
+    <section class="element">
+        <div class="element__left">
+            <img class = "element__image" src="images/formimage.jpg" alt="Form Image">
+        </div>
+        <div class="element__right">
+            <h2>Sign Up Today Now!</h2>
+            <p class="element__subtitle">
+                Fill out the form below to sign up for our new newsletter and recieve updates.
+            </p>
+            <form class="element__form">
+                <h3>Your Interest:</h3>
+                <ul class="element__list">
+                    <li class="element__list-item">Web Development</li>
+                    <li class="element__list-item">UI UX Design</li>
+                    <li class="element__list-item">Digital Marketing</li>
+                </ul>
+                <div class="element__form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                </div>
+                <div class="element__form-group">
+                    <label for="course">Select Course:</label>
+                    <select id="course">
+                        <option value="">Choose a course...</option>
+                        <option value="html">HTML & CSS</option>
+                        <option value="js">Javascript</option>
+                        <option value="react">React</option>
+                    </select>
+                </div>
+                <button type="submit" class="element__button">
+                    Submit Form
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
