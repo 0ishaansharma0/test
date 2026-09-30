@@ -84,6 +84,8 @@ operatorButtons.forEach(button => {
     });
 
 });
+
+
 function calculate() {
 
     if (firstNumber === "" || secondNumber === "" || operator === "") {
@@ -96,8 +98,22 @@ function calculate() {
         Number(secondNumber)
     );
 
-    display.textContent = Number(result.toFixed(10));
-    firstNumber = String(result);
+    if (typeof result === "string") {
+        display.textContent = result;
+
+        firstNumber = "";
+        secondNumber = "";
+        operator = "";
+        justCalculated = true;
+
+        return;
+    }
+
+    const roundedResult = Number(result.toFixed(10));
+
+    display.textContent = roundedResult;
+
+    firstNumber = String(roundedResult);
     secondNumber = "";
     justCalculated = true;
 }
@@ -114,6 +130,12 @@ clearButton.addEventListener("click", () => {
 })
 
 function inputDecimal(){
+    if (justCalculated) {
+        firstNumber = "";
+        secondNumber = "";
+        operator = "";
+        justCalculated = false;
+    }
     if (operator === ""){
         if (!firstNumber.includes(".")){
             firstNumber += ".";
@@ -136,9 +158,12 @@ const backspaceButton = document.querySelector(".backspace");
 
 function backspace(){
     if (operator === ""){
-        firstNumber = firstNumber.slice(0, -1);    }
+        firstNumber = firstNumber.slice(0, -1);    
+        display.textContent = firstNumber || "0";
+    }
     else {
         secondNumber = secondNumber.slice(0, -1);
+        display.textContent = secondNumber || "0";
     }
     display.textContent = operator === "" ? firstNumber : secondNumber;
 }
