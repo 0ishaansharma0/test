@@ -14,7 +14,7 @@ body {
 }
 
 .calculator {
-    width: 320px;
+    width: 350px;
     padding: 20px;
 
     border: 2px solid black;
@@ -22,7 +22,9 @@ body {
 }
 
 .display {
-    min-height: 70px;
+    width: 100%;
+    height: 80px;
+
     margin-bottom: 15px;
     padding: 15px;
 
@@ -33,21 +35,24 @@ body {
     border: 2px solid black;
     border-radius: 5px;
 
-    font-size: 30px;
+    font-size: 32px;
 
     overflow: hidden;
 }
 
 .buttons {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 8px;
 }
 
 button {
-    min-height: 55px;
+    width: 100%;
+    height: 60px;
 
-    font-size: 18px;
+    font-size: 20px;
 
     cursor: pointer;
 }
